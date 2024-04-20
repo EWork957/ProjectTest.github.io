@@ -1,0 +1,51 @@
+/*CONTAINER~~~~~~~~~~~~~~~~~~*/
+.container {
+    max-width: 280px;
+    max-height: 388px; 
+    margin: 0 auto; 
+    padding: 0px; 
+    display: flex; 
+    flex-direction: column;
+}
+/*HEADER~~~~~~~~~~~~~~~~~~*/
+.header {
+    text-align: center;
+}
+.separator {
+    width: 100%;
+}
+/*FOOTER~~~~~~~~~~~~~~~~~~*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(101, 101, 101);
+    color: white;
+    text-align: center;
+}
+/*AI BUTTON~~~~~~~~~~~~~~~~~~*/
+.centered-button {
+    position: absolute; /* Position button */
+    bottom: 90px; /* Set distance from bottom */
+    left: 50%; /* Align to horizontal center */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 200px; /* Set width of button */
+    padding: 20px; /* Add padding */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 50px; /* Rounded circle corners */
+    cursor: pointer; /* Show pointer cursor */
+    transition: background-color 0.3s, transform 0.2s ease-in-out; /* Smooth transition for background color and transform */
+}
+
+/* Hover effect */
+.centered-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Click effect */
+.centered-button:active {
+    background-color: #003366; /* Even darker blue when clicked */
+}
