@@ -1,64 +1,51 @@
+/*CONTAINER~~~~~~~~~~~~~~~~~~*/
+.container {
+    max-width: 280px;
+    max-height: 388px; 
+    margin: 0 auto; 
+    padding: 0px; 
+    display: flex; 
+    flex-direction: column;
+}
+/*HEADER~~~~~~~~~~~~~~~~~~*/
 .header {
     text-align: center;
-    margin-bottom: 20px;
 }
-
-.header h1 {
-    font-size: 24px;
-}
-
 .separator {
-    width: 50%;
-    margin: auto;
-    border: 1px solid #000;
-    margin-bottom: 20px;
+    width: 100%;
 }
-.ipad-mini {
-    width: 280px; /* Width of iPad mini in portrait mode */
-    height: 388px; /* Height of iPad mini in portrait mode, increased to accommodate the processing and completion messages */
-    border: 2px solid black;
-    position: relative;
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px; /* Increased padding to accommodate the processing and completion messages */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Space between the messages and buttons */
-}
-
-.buttons-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10px; /* Add padding to create space between buttons and top */
-}
-
-.ipad-mini button {
-    width: 80%; /* Set width of buttons */
-    padding: 15px; /* Set padding of buttons */
-    background-color: #ffffff; /* Clear background */
-    border: 2px solid black;
-    border-radius: 20px; /* Rounded corners */
-    cursor: pointer;
-    font-size: 16px;
+/*FOOTER~~~~~~~~~~~~~~~~~~*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(101, 101, 101);
+    color: white;
     text-align: center;
-    margin-bottom: 10px; /* Adjust spacing between buttons */
+}
+/*AI BUTTON~~~~~~~~~~~~~~~~~~*/
+.centered-button {
+    position: absolute; /* Position button */
+    bottom: 90px; /* Set distance from bottom */
+    left: 50%; /* Align to horizontal center */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 200px; /* Set width of button */
+    padding: 20px; /* Add padding */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 50px; /* Rounded circle corners */
+    cursor: pointer; /* Show pointer cursor */
+    transition: background-color 0.3s, transform 0.2s ease-in-out; /* Smooth transition for background color and transform */
 }
 
-.ipad-mini button:first-child {
-    margin-top: -10px; /* Adjust positioning of the first button */
+/* Hover effect */
+.centered-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
-.ipad-mini button:hover {
-    background-color: #f0f0f0; /* Lighter background on hover */
-}
-
-.ipad-mini button:active {
-    background-color: #dcdcdc; /* Darker background when button is clicked */
-}
-
-.processing-message,
-.completion-message {
-    font-size: 16px;
-    text-align: center;
-    display: none; /* Initially hidden */
+/* Click effect */
+.centered-button:active {
+    background-color: #003366; /* Even darker blue when clicked */
 }
