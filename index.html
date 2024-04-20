@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="ipad-mini">
-        <div class="header">
-            <h1>QUICK HEALTH</h1>
-            <hr class="separator">
+    <div class="container">
+        <!--IPAD-->
+        <div class="ipad-mini">
+            <!--HEADER-->
+            <div class="header">
+                <h1>QUICK HEALTH</h1>
+                <hr class="separator"> 
+            </div>
+            <!--FOOTER-->
+            <div class="footer">
+                <p>Email: info@quickhealth.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
         </div>
-        <div id="processing-message" class="processing-message">Processing...</div>
-        <div id="completion-message" class="completion-message"></div>
-        <div class="buttons-container">
-            <button class="button1" onclick="processRequest('Topic 1')">Topic 1</button>
-            <button class="button2" onclick="processRequest('Topic 2')">Topic 2</button>
-            <button class="button3" onclick="processRequest('Topic 3')">Topic 3</button>
-        </div>
+        <!--CENTERED BUTTON-->
+        <button class="centered-button">SPEAK WITH AI</button>
     </div>
 
     <script src="script.js"></script>
